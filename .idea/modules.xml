@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/PythonPoliTo.iml" filepath="$PROJECT_DIR$/.idea/PythonPoliTo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../fullstack_sushi/.idea/fullstack_sushi.iml" filepath="$PROJECT_DIR$/../fullstack_sushi/.idea/fullstack_sushi.iml" />
+    </modules>
+  </component>
+</project>
