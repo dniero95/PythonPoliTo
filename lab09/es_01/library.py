@@ -24,15 +24,18 @@ def even_to_zero(list):
 # d. Sostituire ciascun elemento, tranne il primo e l’ultimo, con il più grande dei due elementi ad esso adiacenti. È possibile usare liste di appoggio.
 
 def max_in_middle(list):
-    pass #todo: define function
+    pass # todo: define function
 
 # e. Eliminare l’elemento centrale della lista se questa ha dimensione dispari, altrimenti eliminare i due elementi centrali.
 
 def delete_central(list):
     if len(list) % 2 == 0:
         del list[int(len(list) / 2)]
-        del list[int((len(list) / 2) -1)]
+        del list[int((len(list) / 2))]
     else:
         del list[int(len(list) / 2)]
 
-# todo: fix function
+# f. Spostare tutti gli elementi pari all’inizio della lista (lasciando quelli dispari in coda), preservando però l’ordinamento relativo tra gli elementi.
+
+def shift_even_to_start(list):
+    pass
