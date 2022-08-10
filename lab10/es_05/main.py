@@ -29,12 +29,34 @@ if __name__ == '__main__':
             print('Error! Available options are 1 or 2')
 
 
-    file_name = input('File name: ')
+    file_name = input('Input file name: ')
 
     file = open(file_name, 'r')
-    for char in file.read():
-        if char.upper() in alphabet:
-            pass
+    decoded_text = ''
+    encrypted_text = ''
+
+    if option == 1:
+        for char in file.read():
+            if char.upper() in alphabet:
+                pos = alphabet.find(char.upper())
+                encrypted_text += custom_alphabet[pos]
+    else:
+        for char in file.read():
+            if char.upper() in custom_alphabet:
+                pos = custom_alphabet.find(char.upper())
+                decoded_text += alphabet[pos]
+
     file.close()
-    # todo: finish the exercise
-    # TODO: add function to code, add comment, improve efficiency
+
+    file_name = input('Output file name: ')
+    file = open(file_name, 'w')
+    file.write(encrypted_text)
+    file.write(decoded_text)
+
+    file.close()
+
+
+
+
+
+
