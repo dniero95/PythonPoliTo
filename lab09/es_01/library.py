@@ -51,3 +51,14 @@ def second_top(list):
     del list[list.index(top)]
     return max(list)
 
+# h. Restituire True se e solo se la lista è ordinata in senso crescente.
+
+def is_asc(list):
+    asc = True
+    for count, number in enumerate(list[1:]):
+        if count == 0:
+            continue
+        elif number <= list[count - 1]:
+            asc = False
+
+    return asc
