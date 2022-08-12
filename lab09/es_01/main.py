@@ -6,5 +6,5 @@ if __name__ == '__main__':
     # exchange_first_last(list)
     # shift_right(list)
     # even_to_zero(list)
-    delete_central(list)
+    shift_even_to_start(list)
     print(list)

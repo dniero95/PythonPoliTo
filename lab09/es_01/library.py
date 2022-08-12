@@ -38,4 +38,8 @@ def delete_central(list):
 # f. Spostare tutti gli elementi pari all’inizio della lista (lasciando quelli dispari in coda), preservando però l’ordinamento relativo tra gli elementi.
 
 def shift_even_to_start(list):
-    pass
+    even_list = [number for number in list if number % 2 == 0]
+    odd_list = [number for number in list if number % 2 != 0]
+    list.clear()
+    list.extend(even_list)
+    list.extend(odd_list)
