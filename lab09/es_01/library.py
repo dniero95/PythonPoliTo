@@ -43,3 +43,11 @@ def shift_even_to_start(list):
     list.clear()
     list.extend(even_list)
     list.extend(odd_list)
+
+# g. Restituire il secondo valore maggiore della lista (senza pari meriti).
+
+def second_top(list):
+    top = max(list)
+    del list[list.index(top)]
+    return max(list)
+
