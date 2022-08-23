@@ -62,3 +62,15 @@ def is_asc(list):
             asc = False
 
     return asc
+
+
+# i. Restituire True se e solo se la lista contiene due elementi adiacenti duplicati.
+
+def contain_pair_double(list):
+    pass # todo: finish func
+
+
+# j. Restituire True se e solo se la lista contiene elementi duplicati (non necessariamente adiacenti).
+
+def contain_double(list):
+    pass # todo: finish func

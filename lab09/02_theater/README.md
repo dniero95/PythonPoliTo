@@ -1,3 +1,5 @@
+# 02_theater
+
 ## Testo dell'esercizio
 
 Lo schema dei posti a teatro è una tabella con i prezzi dei biglietti per ciascun posto, come questa. 
