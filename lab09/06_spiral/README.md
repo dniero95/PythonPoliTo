@@ -7,3 +7,4 @@ Suggerimento: costruire prima la spirale numerica in una tabella NxN, e solo suc
 Ad esempio, se N=4, il programma dovrà stampare:
 
 1234 ⨀→→↴ 1213145 ↱ → ↴ ↓ 1116156 ↑ ⨂ ↵ ↓ 10 9 8 7 ↑ ← ← ↵
+
