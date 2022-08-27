@@ -1,0 +1,8 @@
+11261; Francesco; Cocco; cocco.francesco@studenti.itis.net; 4C
+ 11263; Mauro; Marchesato; marchesato.mauro@studenti.itis.net; 4C
+ 11266; Lorena; Di Stefano; di stefano.lorena@studenti.itis.net; 4D
+ 11274; Roberta; Alibrandi; alibrandi.roberta@studenti.itis.net; 4C
+ 11281; Francesco; Gianfri; gianfri.francesco@studenti.itis.net; 4C
+ 11283; Valerio; Cau; cau.valerio@studenti.itis.net; 4C
+ 11284; Andrea; Dattola; dattola.andrea@studenti.itis.net; 4D
+ 11297; Alessandra; Paone; paone.alessandra@studenti.itis.net; 4
