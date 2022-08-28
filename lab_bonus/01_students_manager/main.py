@@ -9,16 +9,10 @@ from sm_functions import print_menu
 if __name__ == '__main__':
 
     # Create list of students
-    # with open('students.csv', 'r') as file:
-    #     students = file.readlines()
-    #     students.remove(students[0])
-    #     for student in students:
-    #         student = student.replace('\n', '')
-    #         student = student.split((','))
-    #         Student(student[0], student[1], student[2], student[3], student[4])
 
     Student.instantiate_from_csv('students.csv')
-    print(f'{Student.students_number} studenti trovati')
+
+    print(f'{Student.students_number} studenti trovati...\n')
     print_menu() #Stampa il menù
     # Memorizza l'opzione
     while True:
@@ -27,8 +21,7 @@ if __name__ == '__main__':
             print('Arrivederci')
             sys.exit() # Termina il programma
         elif option == 1:
-            for student in Student.all:
-                print(student)
+            Student.print_all_students()
         elif option == 2:
             class_code = input('Classe: ')
             for student in Student.all:
