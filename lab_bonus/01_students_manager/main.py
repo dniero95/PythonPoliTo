@@ -1,5 +1,3 @@
-import csv
-import os
 import os
 import sys
 from student import Student
@@ -26,14 +24,10 @@ if __name__ == '__main__':
             class_code = input('Classe: ')
             Student.filter_students_by_class(class_code)
         elif option == 3:
-            first_char_surname = input('Prima Lettera Cognome: ')
-            for student in Student.all:
-                if student.surname[0] == first_char_surname:
-                    print(student)
+            first_char_surname = input('Cognome: ')
+            Student.filter_students_by_surname(first_char_surname)
         elif option == 4:
-            Student.all.sort(key=lambda student: student.school_class)
-            for student in Student.all:
-                print(student)
+            Student.sort_students_by_class()
         elif option == 5:
             with open('studenti-quarta.txt', 'w') as file:
                 file.writelines(str([student for student in Student.all if int(student.school_class[0]) == 4]).replace(',', '\n')[1:-2])

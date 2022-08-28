@@ -45,6 +45,19 @@ class Student:
         for student in Student.all:
             if student.school_class == class_code:
                 print(student)
+    @staticmethod
+    def filter_students_by_surname(surname):
+        digits = len(surname) # number of digits to compare
+        for student in Student.all:
+            if student.surname[0:digits] == surname:
+                print(student)
+
+    @staticmethod
+    def sort_students_by_class():
+        Student.all.sort(key=lambda student: student.school_class)
+        for student in Student.all:
+            print(student)
+
     # Represent student obj
     def __repr__(self):
         return f'{self.registration_number}; {self.name}; {self.surname}; {self.email}; {self.school_class}'
