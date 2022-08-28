@@ -33,6 +33,12 @@ class Student:
                     email=student.get('email'),
                     school_class=student.get('school_class')
                 )
+
+    # Print all the students created
+    @staticmethod
+    def print_all_students():
+        for student in Student.all:
+            print(student)
     # Represent student obj
     def __repr__(self):
         return f'{self.registration_number}; {self.name}; {self.surname}; {self.email}; {self.school_class}'
