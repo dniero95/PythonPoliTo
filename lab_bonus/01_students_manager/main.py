@@ -1,4 +1,6 @@
 import csv
+import os
+import os
 import sys
 from student import Student
 
@@ -7,15 +9,16 @@ from sm_functions import print_menu
 if __name__ == '__main__':
 
     # Create list of students
-    with open('students.csv', 'r') as file:
-        students = file.readlines()
-        students.remove(students[0])
-        for student in students:
-            student = student.replace('\n', '')
-            student = student.split((';'))
-            Student(student[0], student[1], student[2], student[3], student[4])
+    # with open('students.csv', 'r') as file:
+    #     students = file.readlines()
+    #     students.remove(students[0])
+    #     for student in students:
+    #         student = student.replace('\n', '')
+    #         student = student.split((','))
+    #         Student(student[0], student[1], student[2], student[3], student[4])
 
-        print(f'{Student.students_number} studenti trovati')
+    Student.instantiate_from_csv('students.csv')
+    print(f'{Student.students_number} studenti trovati')
     print_menu() #Stampa il menù
     # Memorizza l'opzione
     while True:
@@ -43,3 +46,8 @@ if __name__ == '__main__':
         elif option == 5:
             with open('studenti-quarta.txt', 'w') as file:
                 file.writelines(str([student for student in Student.all if int(student.school_class[0]) == 4]).replace(',', '\n')[1:-2])
+        elif option == 6:
+            os.system('clear')
+            print_menu()
+        else:
+            print('Errore! Opzione non disponibile!')
