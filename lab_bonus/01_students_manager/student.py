@@ -39,6 +39,12 @@ class Student:
     def print_all_students():
         for student in Student.all:
             print(student)
+
+    @staticmethod
+    def filter_students_by_class(class_code):
+        for student in Student.all:
+            if student.school_class == class_code:
+                print(student)
     # Represent student obj
     def __repr__(self):
         return f'{self.registration_number}; {self.name}; {self.surname}; {self.email}; {self.school_class}'

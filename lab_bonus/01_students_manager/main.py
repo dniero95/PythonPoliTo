@@ -24,9 +24,7 @@ if __name__ == '__main__':
             Student.print_all_students()
         elif option == 2:
             class_code = input('Classe: ')
-            for student in Student.all:
-                if student.school_class == class_code:
-                    print(student)
+            Student.filter_students_by_class(class_code)
         elif option == 3:
             first_char_surname = input('Prima Lettera Cognome: ')
             for student in Student.all:
