@@ -1,4 +1,5 @@
 import csv
+from sm_functions import *
 
 
 class Student:
