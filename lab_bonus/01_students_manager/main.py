@@ -29,7 +29,9 @@ if __name__ == '__main__':
         elif option == 4:
             Student.sort_students_by_class()
         elif option == 5:
-            Student.create_students_file('studenti-quinta.txt', '5A')
+            class_code = input('Classe: ')
+            file_name = input('Nome file: ')
+            Student.create_students_file(file_name, class_code)
             # with open('studenti-quarta.txt', 'w') as file:
             #     file.writelines(str([student for student in Student.all if int(student.school_class[0]) == 4]).replace(',', '\n')[1:-2])
         elif option == 6:

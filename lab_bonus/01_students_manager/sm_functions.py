@@ -10,6 +10,6 @@ def print_menu():
      2 - stampa dell'elenco dei soli studenti di una certa classe (data in input)
      3 - visualizzare l'elenco degli studenti che hanno il cognome che inizia con una certa lettera data in input
      4 - raggruppare gli studenti per classe e visualizzare il risultato
-     5 - creare un file di testo(studenti-quarta.txt) per stampare un elenco di studenti appartenenti alla classe quarta
+     5 - creare un file di testo per stampare un elenco di studenti appartenenti a una classe data in input
      6 - pulisci lo schermo
     ''')
