@@ -29,8 +29,9 @@ if __name__ == '__main__':
         elif option == 4:
             Student.sort_students_by_class()
         elif option == 5:
-            with open('studenti-quarta.txt', 'w') as file:
-                file.writelines(str([student for student in Student.all if int(student.school_class[0]) == 4]).replace(',', '\n')[1:-2])
+            Student.create_students_file('studenti-quinta.txt', '5A')
+            # with open('studenti-quarta.txt', 'w') as file:
+            #     file.writelines(str([student for student in Student.all if int(student.school_class[0]) == 4]).replace(',', '\n')[1:-2])
         elif option == 6:
             os.system('clear')
             print_menu()

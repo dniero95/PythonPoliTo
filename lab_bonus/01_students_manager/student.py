@@ -58,6 +58,13 @@ class Student:
         for student in Student.all:
             print(student)
 
+
+    @staticmethod
+    def create_students_file(file_name: str, class_number: str):
+        with open(file_name, 'w') as file:
+            file.writelines(
+                str([student for student in Student.all if student.school_class[0:len(class_number)] == class_number]).replace(',', '\n')[1:-2])
+
     # Represent student obj
     def __repr__(self):
         return f'{self.registration_number}; {self.name}; {self.surname}; {self.email}; {self.school_class}'
