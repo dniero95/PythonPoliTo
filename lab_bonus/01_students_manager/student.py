@@ -7,6 +7,14 @@ class Student:
     students_number = 0
     # I define the constructor
     def __init__(self, registration_number: int, name: str, surname: str, email: str, school_class: str):
+        assert 9999 < registration_number < 100000, f'Registration Number: {registration_number} must be of five digits'
+
+        assert len(name) > 2, f'Name: {name} must be at least of two character.'
+        assert len(surname) > 2, f'Name: {surname} must be at least of two character.'
+        assert check_mail(email), f'e-mail: {email} is not in the correct format.'
+        assert check_class_code(school_class), f'Class Code: {school_class} is not in the correct format.'
+
+
         self.registration_number = registration_number
         self.name = name
         self.surname = surname
