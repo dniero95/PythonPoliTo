@@ -1,4 +1,4 @@
-Matricola,Nome,Cognome,Email,Classe
+registration_number,name,surname,email,school_class
 11258,Piero,Giuliani,giuliani.piero@studenti.itis.net,1A
 11259,Laura,De Stena,destena.laura@studenti.itis.net,2A
 11260,Giulia,Caruso,caruso.giulia@studenti.itis.net,3B
