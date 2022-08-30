@@ -35,7 +35,7 @@ Sia dato il seguente file access.txt
 2015-01-02 12:00:20 bianchi F 
 2015-01-03 00:00:01 rossi S 
 2015-01-03 11:12:20 verdi F 
-2015-01-03 11:13:40 verdi F 
+2015-01-03 11:13:20 verdi F 
 2015-01-03 11:13:42 verdi F 
 2015-01-03 11:13:40 verdi S 
 2015-01-05 09:00:01 verdi F 
@@ -56,3 +56,4 @@ verdi 2015-01-05 09:00:01 09:00:05
 Numero totale di anomalie: 4
 Utente con il maggior numero di anomalie: verdi
 ```
+## Approccio alla soluzione
