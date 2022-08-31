@@ -11,8 +11,8 @@ Realizzare le seguenti classi:
 
 1) Persona è una classe astratta con
 
-proprietà: Nome, Cognome, Stipendio
-metodi: Tredicesima():double, ToString
+    proprietà: Nome, Cognome, Stipendio
+    metodi: Tredicesima():double, ToString
 2) Venditore che eredita da Persona con
 proprietà: Settore che descrive il tipo di settore vendite a cui fa capo es Auto o Moto
 metodi: Tredicesima() che restituisce il 91% in più dello stipendio, Clone, ToString

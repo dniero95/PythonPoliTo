@@ -1,5 +1,4 @@
 class Product:
-    # proprietà: Codice, Prodotto, Descrizione, Prezzo metodi: ToString
     def __init__(self, code:str, name:str, description: str, price:float):
         self.code = code
         self.name = name
