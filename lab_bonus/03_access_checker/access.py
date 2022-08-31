@@ -61,14 +61,14 @@ class Access:
     # return the user with the max number of anomalies given a list of user.
 
     @staticmethod
-    def max_number_of_anomalies(users:list):
+    def user_max_number_of_anomalies(users:list):
         anomalies = 0
-        user = ''
+        user_with_max_anomalies = 'None'
         for user in users:
-            if anomalies > Access.number_of_anomalies([user]):
-                user = user.name
+            if anomalies < Access.number_of_anomalies([user]):
+                user_with_max_anomalies = user
                 anomalies = Access.number_of_anomalies([user])
-        return user
+        return user_with_max_anomalies
 
 
     # print all access
