@@ -21,9 +21,9 @@ class Person:
                 date = person[3].split('/')
                 day = date[0]
                 month = date[1]
-                year = date[3]
-                date =dt.datetime(year, month, day)
-                Person(person[0, person[1]], person[2], date, person[4], person[5])
+                year = date[2]
+                date =dt.datetime(int(year), int(month), int(day))
+                Person(person[0], person[1], person[2], date, person[4], person[5])
 
 
     @classmethod
